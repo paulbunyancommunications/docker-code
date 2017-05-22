@@ -57,3 +57,5 @@ RUN composer global require "hirak/prestissimo:^0.3"
 COPY cfg/php-override.ini /usr/local/etc/php/conf.d/php-override.ini
 
 COPY docker-php-entrypoint /usr/local/bin/
+
+RUN chmod 755 /usr/local/bin/docker-php-entrypoint
