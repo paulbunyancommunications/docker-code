@@ -47,4 +47,6 @@ COPY cfg/php-override.ini /usr/local/etc/php/conf.d/php-override.ini
 
 COPY docker-php-entrypoint /usr/local/bin/
 
+COPY cfg/ww-errorlogging.conf /usr/local/etc/php-fpm.d/
+
 RUN chmod 755 /usr/local/bin/docker-php-entrypoint
